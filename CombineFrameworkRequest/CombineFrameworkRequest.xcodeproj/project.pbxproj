@@ -15,6 +15,8 @@
 		CEC4BD6326EC32D100CD0C01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC4BD6126EC32D100CD0C01 /* LaunchScreen.storyboard */; };
 		CEC4BD6E26EC32D100CD0C01 /* CombineFrameworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC4BD6D26EC32D100CD0C01 /* CombineFrameworkRequestTests.swift */; };
 		CEC4BD7926EC32D200CD0C01 /* CombineFrameworkRequestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC4BD7826EC32D200CD0C01 /* CombineFrameworkRequestUITests.swift */; };
+		CEC4BD8926EC335A00CD0C01 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC4BD8826EC335A00CD0C01 /* ApiService.swift */; };
+		CEC4BD8B26EC336E00CD0C01 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC4BD8A26EC336E00CD0C01 /* ApiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CEC4BD7426EC32D200CD0C01 /* CombineFrameworkRequestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineFrameworkRequestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC4BD7826EC32D200CD0C01 /* CombineFrameworkRequestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkRequestUITests.swift; sourceTree = "<group>"; };
 		CEC4BD7A26EC32D200CD0C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC4BD8826EC335A00CD0C01 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		CEC4BD8A26EC336E00CD0C01 /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,11 @@
 		CEC4BD5526EC32CF00CD0C01 /* CombineFrameworkRequest */ = {
 			isa = PBXGroup;
 			children = (
-				CEC4BD5626EC32CF00CD0C01 /* AppDelegate.swift */,
-				CEC4BD5826EC32CF00CD0C01 /* SceneDelegate.swift */,
-				CEC4BD5A26EC32CF00CD0C01 /* ViewController.swift */,
-				CEC4BD5C26EC32CF00CD0C01 /* Main.storyboard */,
-				CEC4BD5F26EC32D100CD0C01 /* Assets.xcassets */,
-				CEC4BD6126EC32D100CD0C01 /* LaunchScreen.storyboard */,
+				CEC4BD8F26EC33E500CD0C01 /* View */,
+				CEC4BD8E26EC33D300CD0C01 /* Aplication */,
+				CEC4BD8D26EC33C800CD0C01 /* Controller */,
+				CEC4BD8726EC331F00CD0C01 /* Service */,
+				CEC4BD8626EC331A00CD0C01 /* Model */,
 				CEC4BD6426EC32D100CD0C01 /* Info.plist */,
 			);
 			path = CombineFrameworkRequest;
@@ -126,6 +129,49 @@
 				CEC4BD7A26EC32D200CD0C01 /* Info.plist */,
 			);
 			path = CombineFrameworkRequestUITests;
+			sourceTree = "<group>";
+		};
+		CEC4BD8626EC331A00CD0C01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4BD8A26EC336E00CD0C01 /* ApiModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC4BD8726EC331F00CD0C01 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4BD8826EC335A00CD0C01 /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEC4BD8D26EC33C800CD0C01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4BD5A26EC32CF00CD0C01 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEC4BD8E26EC33D300CD0C01 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4BD5F26EC32D100CD0C01 /* Assets.xcassets */,
+				CEC4BD5626EC32CF00CD0C01 /* AppDelegate.swift */,
+				CEC4BD5826EC32CF00CD0C01 /* SceneDelegate.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		CEC4BD8F26EC33E500CD0C01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4BD6126EC32D100CD0C01 /* LaunchScreen.storyboard */,
+				CEC4BD5C26EC32CF00CD0C01 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +306,9 @@
 			files = (
 				CEC4BD5B26EC32CF00CD0C01 /* ViewController.swift in Sources */,
 				CEC4BD5726EC32CF00CD0C01 /* AppDelegate.swift in Sources */,
+				CEC4BD8926EC335A00CD0C01 /* ApiService.swift in Sources */,
 				CEC4BD5926EC32CF00CD0C01 /* SceneDelegate.swift in Sources */,
+				CEC4BD8B26EC336E00CD0C01 /* ApiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
